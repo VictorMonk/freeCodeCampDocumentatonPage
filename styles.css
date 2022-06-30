@@ -1,0 +1,73 @@
+html {
+     background-color: beige;
+}
+#main-doc {
+     margin-left: 125;
+     background: darkgrey;
+     display: block;
+     min-width: 300px;
+     border: 2px solid black;
+
+}
+#Introduction {
+     font-color: black;
+}
+#Elements {
+     font-color: black;
+}
+#Attributes {
+     font-color: black;
+}
+#HTML_Anatomy {
+     font-color: black;
+}
+#Comments {
+     font-color: black;
+}
+#navbar {
+font-size: 20px;
+text-align: left;
+padding-left: 10;
+padding-top: 5;
+display: block;
+max-width: 106px;
+min-width: 50px;
+background-color: lightgrey;
+border: 2px solid black;
+position: fixed;
+}
+.header-class {
+ margin: 0 auto;
+ font-family: Helvetic, sans-serrif;
+}
+.main-section {
+
+}
+.nav-span {
+     display: block
+
+}
+nav header {
+     font-size: 15px;
+     font-weight: bold;
+}
+header {
+     font-size: 25px;
+     font-weight: bold;
+}
+.bold-span {
+     font-weight: bold;
+     font-size: 18px;
+}
+.italic-span {
+     font-weight: light;
+     font-size: 13px;
+}
+footer {
+     text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size:  10;
+  }
+}
