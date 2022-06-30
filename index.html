@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utc-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+  <nav id="navbar">
+    <header> HTML Documentation</header><br>
+   <a class="nav-link" href="#Introduction">Introduction</a><br></br>
+   <a class="nav-link" href="#Elements">Elements</a><br></br>
+   <a class="nav-link" href="#Attributes"><span class="nav-span">Attributes</span></a><br>
+   <a class="nav-link" href="#HTML_Anatomy">HTML Anatomy</a><br></br>
+   <a class="nav-link" href="#Comments">Comments</a>
+      </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p><span class="bold-span">HTML</span> <code>Hypertext Markup Language</code> is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on. For example, consider the following line of text:</p>
+      <p><ul>
+        <li><span class="bold-span">The opening tag:</span> This consists of the name of the element wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect..</li><br>
+        <li><span class="bold-span">The content:</span> This is the content of the element. For example a <code>header</code> element would include a breif heading as the content for the element specified. A <code>paragraph</code> element would contain information explaining the heading element in greater detail. </li><br>
+        <li><span class="bold-span">The closing tag:</span> This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li><br>
+       
+      </p>
+      </section>
+    <Section class="main-section" id="Elements">
+      <header>Elements</header>
+      <p></p>
+      <p><ul> <li><span class="bold-span">Block-level elements</span> form a visible block on a page. A block-level element appears on a new line following the content that precedes it. Any content that follows a block-level element also appears on a new line. Block-level elements are usually structural elements on the page. For example, a block-level element might represent headings, paragraphs, lists, navigation menus, or footers. A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.</li><br>
+        <li><span class="bold-span">Inline elements</span> are contained within block-level elements, and surround only small parts of the document's content (not entire paragraphs or groupings of content). An inline element will not cause a new line to appear in the document.</li>
+      </ul></p>
+      <p><span class="bold-span">Not all elements</span> follow the pattern of an opening tag, content, and a closing tag. Some elements consist of a single tag, which is typically used to insert/embed something in the document. For example, the <code>img</code> element embeds an image file onto a page:<br></br>
+     <span class="italic-span"> You can find a table of all the elements <a href="https://html.spec.whatwg.org/multipage/indices.html#elements-3">here</a></span></p>
+      </section>
+
+    <Section class="main-section" id="Attributes">
+      <header>Attributes</header>
+      <p><span class="bold-span">Attributes</span> contain extra information about the element that won't appear in the content. In this example, the class attribute is an identifying name used to target the element with style information.</p>
+      <p><span class="bold-span">An attribute consists of the following;</span> <ul>
+        <li>A space between it and the element name. (For an element with more than one attribute, the attributes should be separated by spaces too.)</li>
+        <li>The attribute name, followed by an equal sign.</li>
+        <li>An attribute value, wrapped with opening and closing quote marks.</li>
+        </ul>
+      </p>
+      </section>
+
+    <section class="main-section" id="HTML_Anatomy">
+      <header>HTML Anatomy</header>
+      <p><span class="bold-span">Individual HTML elements</span> aren't very useful on their own. Next, let's examine how individual elements combine to form an entire HTML page:</p>
+      <p><ul>
+        <li><code class="bold-span">&lt;!DOCTYPE html&gt;</code>: When HTML was young (1991-1992), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML. More recently, the doctype is a historical artifact that needs to be included for everything else to work right. <code>&lt;!DOCTYPE html&gt;</code> is the shortest string of characters that counts as a valid doctype. That is all you need to know!</li><br></br>
+        <li><code class="bold-span">&lt;html&gt;&lt;/html&gt;</code>: The &lt;html&gt; element. This element wraps all the content on the page. It is sometimes known as the root element.</li><br></br>
+        <li><code class="bold-span">&lt;head&gt;&lt;/head&gt;</code>: The <head> element. This element acts as a container for everything you want to include on the HTML page, that isn't the content the page will show to viewers. This includes keywords and a page description that would appear in search results, CSS to style content, character set declarations, and more. You will learn more about this in the next article of the series.</li><br></br>
+        <li><code class="bold-span">&lt;meta charset="utf-8"&gt;</code>: The &lt;meta&gt; element. This element represents metadata that cannot be represented by other HTML meta-related elements, like <code>&lt;base&gt;, &lt;link&gt;, &ltscript&gt;, &lt;style&gt; or &lt;title&gt;</code>. The charset attributes sets the character set for your document to UTF-8, which includes most characters from the vast majority of human written languages. With this setting, the page can now handle any textual content it might contain. There is no reason not to set this, and it can help avoid some problems later.</li><br></br>
+        <li><code class="bold-span">&lt;title&gt;</title></code>: The <code>&lt;title&gt;</code> element. This sets the title of the page, which is the title that appears in the browser tab the page is loaded in. The page title is also used to describe the page when it is bookmarked.</li><br></br>
+        <li><code class="bold-span">&lt;body&gt;&lt;/body&gt;</code>: The <code>&lt;body&gt;</code> element. This contains all the content that displays on the page, including text, images, videos, games, playable audio tracks, or whatever else.</li>
+      </p>
+      </section>
+    
+     <section class="main-section" id="Comments">
+      <header>Comments</header>
+      <p><span class="bold-span">HTML</span> has a mechanism to write comments in the code. Browsers ignore comments, effectively making comments invisible to the user. The purpose of comments is to allow you to include notes in the code to explain your logic or coding. This is very useful if you return to a code base after being away for long enough that you don't completely remember it. Likewise, comments are invaluable as different people are making changes and updates.</p>
+      <p><span class="bold-span">Example</span><br><code>&lt;!-- &lt;p&gt;excluded paragraph&lt;p&gt; --!&gt;</code><br>This will exclude the paragraph element from the webpage, but not completely from the code itself.</p>
+      </section>
+      
+    </main>
+    <footer>All refrences are taken from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">here</a></footer>
+  </html>
